@@ -2,18 +2,10 @@ import React from 'react';
 import Resume from '../components/Resume';
 import axios from 'axios';
 
-const test = []
-test.push({
-    first_name: 'Brandon',
-    last_name: 'Bashein',
-    email: 'b2randon@gmail.com',
-    title: 'Developer'
-});
-
 class ResumeView extends React.Component {
 
     state = {
-        resume: []
+        resume: {}
     }
 
     componentDidMount() {
