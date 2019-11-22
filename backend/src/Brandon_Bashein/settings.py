@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # project apps
     'resume',
+    'issue_tracker',
 ]
 
 MIDDLEWARE = [
