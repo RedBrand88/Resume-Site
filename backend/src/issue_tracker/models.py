@@ -15,9 +15,9 @@ class Ticket(models.Model):
     )
 
     issue = models.CharField(max_length=255)
-    severity = models.CharField(max_length=6, choices=SEVERITY_LEVELS)
+    severity = models.CharField(max_length=6, choices=SEVERITY_LEVELS, default='Normal')
     assignedTo = models.CharField(max_length=60)
-    status = models.CharField(max_length=6, choices=STATUS_OPTIONS)
+    status = models.CharField(max_length=6, choices=STATUS_OPTIONS, default='Open')
     description = models.TextField()
 
     def __str__(self):
