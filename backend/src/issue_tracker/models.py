@@ -3,10 +3,10 @@ from django.db import models
 
 class Ticket(models.Model):
     SEVERITY_LEVELS = (
-        ('N', 'Normal'),
-        ('L', 'Low'),
-        ('H', 'High'),
-        ('U', 'Urgent'),
+        ('Normal', 'Normal'),
+        ('Low', 'Low'),
+        ('High', 'High'),
+        ('Urgent', 'Urgent'),
     )
 
     STATUS_OPTIONS = (
