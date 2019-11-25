@@ -1,13 +1,9 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework import viewsets
+
 from issue_tracker.models import Ticket
 from .serializers import TicketSerializer
 
 
-class TicketListView(ListAPIView):
-    queryset = Ticket.objects.all()
-    serializer_class = TicketSerializer
-
-
-class TicketDetailView(RetrieveAPIView):
+class TicketViewSet(viewsets.ModelViewSet):
     queryset = Ticket.objects.all()
     serializer_class = TicketSerializer

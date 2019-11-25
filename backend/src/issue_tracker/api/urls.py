@@ -1,8 +1,7 @@
-from django.urls import path
-from .views import TicketListView, TicketDetailView
+from issue_tracker.api.views import TicketViewSet
+from rest_framework.routers import DefaultRouter
 
 
-urlpatterns = [
-    path('', TicketListView.as_view()),
-    path('<pk>', TicketDetailView.as_view())
-]
+router = DefaultRouter()
+router.register(r'', TicketViewSet, basename='issue_tracker')
+urlpatterns = router.urls
