@@ -7,12 +7,10 @@ djangorestframework==3.10.3
 isort==4.3.21
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
-pdftotext==2.1.4
 pep8==1.7.1
 psycopg2-binary==2.8.4
 pycodestyle==2.5.0
 pylint==2.4.3
-PyPDF2==1.26.0
 pytz==2019.3
 six==1.13.0
 sqlparse==0.3.0
