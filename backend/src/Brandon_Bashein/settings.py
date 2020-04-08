@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if 'DJANGO_DEBUG_FALSE' in os.environ:
     DEBUG = False
     SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
-    ALLOWED_HOSTS = [os.environ['SITENAME']]
+    ALLOWED_HOSTS = ['staging.theprojectforge.com',os.environ['SITENAME']]
 else:
     DEBUG = True
     SECRET_KEY = 'ohpx)gb#ebhan1&9l3fs*5p$9-q!f%20+xj*#!_cb0ytp+2z4@'
