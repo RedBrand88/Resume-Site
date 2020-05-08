@@ -47,11 +47,13 @@ celerybeat-schedule.*
 # Environments
 .env
 .venv
+.virtualenv
 resume-env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+virtualenv/
 
 # mkdocs documentation
 /site
